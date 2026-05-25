@@ -10,7 +10,7 @@ Available on Desktop · Mobile · Browser Extension.
 
 [![Latest Release](https://img.shields.io/github/v/release/bestyourwallet/UKey-Wallet?style=for-the-badge&labelColor=000000&color=22c55e&label=Latest%20Release&v=5)](https://github.com/bestyourwallet/UKey-Wallet/releases/latest)
 [![Website](https://img.shields.io/badge/Website-ukey.com-0969da?style=for-the-badge&labelColor=000000)](https://ukey.com)
-[![Source](https://img.shields.io/badge/Source-ukey--monorepo-0969da?style=for-the-badge&labelColor=000000&logo=github&logoColor=white)](https://github.com/bestyourwallet/ukey-monorepo)
+[![Help Center](https://img.shields.io/badge/Help%20Center-ukey.com%2Fhelp-0969da?style=for-the-badge&labelColor=000000)](https://ukey.com/help)
 
 </div>
 
@@ -182,7 +182,7 @@ UKey staff will **never** ask for your seed phrase or private key — under any 
 
 ## License
 
-UKey Wallet is open source. Source code at [bestyourwallet/ukey-monorepo](https://github.com/bestyourwallet/ukey-monorepo). This repository hosts the official, signed binaries built from that source.
+This repository hosts the official, signed binaries of UKey Wallet, distributed by UKey Limited.
 
 ---
 
