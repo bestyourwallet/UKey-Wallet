@@ -10,7 +10,6 @@ Available on Desktop · Mobile · Browser Extension.
 
 [![Latest Release](https://img.shields.io/github/v/release/bestyourwallet/UKey-Wallet?style=for-the-badge&labelColor=000000&color=22c55e&label=Latest%20Release&v=5)](https://github.com/bestyourwallet/UKey-Wallet/releases/latest)
 [![Website](https://img.shields.io/badge/Website-ukey.com-0969da?style=for-the-badge&labelColor=000000)](https://ukey.com)
-[![Help Center](https://img.shields.io/badge/Help%20Center-ukey.com%2Fhelp-0969da?style=for-the-badge&labelColor=000000)](https://ukey.com/help)
 
 </div>
 
