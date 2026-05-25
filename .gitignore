@@ -1,0 +1,19 @@
+# IDE / Editors
+.idea/
+.vscode/
+*.iml
+
+# macOS / Windows metadata
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editor backups & swap
+*.swp
+*.swo
+*~
+
+# Logs / temp
+*.log
+.cache/

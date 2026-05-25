@@ -1,0 +1,81 @@
+name: sync-readme-version
+
+# Auto-update README.md version references whenever a new public release
+# is published in this repository.
+#
+# Trigger: on release published (NOT on draft, NOT on prerelease)
+# What it does:
+#   1. Reads the new tag (e.g. v1.1.2)
+#   2. Replaces every "1.1.0" / "v1.1.0" reference in README.md with the
+#      new version (matches semver pattern X.Y.Z and vX.Y.Z)
+#   3. Commits and pushes the change back to the default branch
+#
+# This ensures the desktop download links and filename examples always
+# point to the most recent release.
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      version:
+        description: 'Version to write into README (e.g. 1.1.1, no v prefix)'
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    if: ${{ github.event_name == 'workflow_dispatch' || (github.event.release.draft == false && github.event.release.prerelease == false) }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 1
+
+      - name: Resolve target version
+        id: ver
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            VERSION="${{ inputs.version }}"
+          else
+            # Strip leading 'v' from tag (v1.1.1 -> 1.1.1)
+            VERSION="${GITHUB_REF_NAME#v}"
+          fi
+          if [[ ! "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "::error::Version '$VERSION' is not in X.Y.Z format"
+            exit 1
+          fi
+          echo "VERSION=$VERSION" >> $GITHUB_OUTPUT
+          echo ">>> New version: $VERSION"
+
+      - name: Replace version references in README
+        run: |
+          set -e
+          VERSION="${{ steps.ver.outputs.VERSION }}"
+
+          # Replace any /releases/download/v{X.Y.Z}/UKey-Wallet-{X.Y.Z}- pattern
+          sed -i -E "s|/releases/download/v[0-9]+\.[0-9]+\.[0-9]+/UKey-Wallet-[0-9]+\.[0-9]+\.[0-9]+-|/releases/download/v${VERSION}/UKey-Wallet-${VERSION}-|g" README.md
+
+          # Replace any standalone UKey-Wallet-{X.Y.Z}- filename (display text and shasum examples)
+          sed -i -E "s|UKey-Wallet-[0-9]+\.[0-9]+\.[0-9]+-|UKey-Wallet-${VERSION}-|g" README.md
+
+          echo ">>> Diff after substitution:"
+          git --no-pager diff README.md || true
+
+      - name: Commit and push if changed
+        run: |
+          if git diff --quiet README.md; then
+            echo "No README change required."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+          git commit -m "chore: sync README to v${{ steps.ver.outputs.VERSION }}"
+          git push origin main
