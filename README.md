@@ -126,7 +126,6 @@ Found a security issue? Email **[support@ukey.com](mailto:support@ukey.com)** wi
 |---|---|
 | Website | [ukey.com](https://ukey.com) |
 | Developer Portal | [developer.ukey.com](https://developer.ukey.com) |
-| Source Code | [github.com/bestyourwallet](https://github.com/bestyourwallet) |
 | Web Swap | [app.ukey.io/swap](https://app.ukey.io/swap) |
 | BIP39 Tool | [bip39.ukey.com](https://bip39.ukey.com) |
 | Verify Hardware | [ukey.com/hw-verify](https://ukey.com/hw-verify) |
@@ -136,16 +135,12 @@ Found a security issue? Email **[support@ukey.com](mailto:support@ukey.com)** wi
 
 ## Contact Us
 
-Stay connected with the UKey team — for cooperation, support, or technical exchange.
+Stay connected with the UKey team — for support or business inquiries.
 
 **User Support** — [support@ukey.com](mailto:support@ukey.com)
 Monday — Friday · 09:00 — 21:00 (UTC+8) · [FAQ Portal](https://ukey.com/help)
 
 **Business Cooperation** — [business@ukey.com](mailto:business@ukey.com)
-KOL · Channel · Distribution
-
-**Developer / Tech** — [dev@ukey.com](mailto:dev@ukey.com)
-[API Documentation](https://developer.ukey.com)
 
 ---
 
