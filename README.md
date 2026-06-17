@@ -37,7 +37,7 @@ Available on Desktop · Mobile · Browser Extension.
 
 | OS | Source | Direct Download |
 |---|---|---|
-| <img src="https://cdn.simpleicons.org/android/3DDC84" width="14" /> &nbsp; Android | Standalone APK (side-load) | [UKey-Wallet-1.1.1-android.apk](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-android.apk) |
+| <img src="https://cdn.simpleicons.org/android/3DDC84" width="14" /> &nbsp; Android | Standalone APK (side-load) | [UKey-Wallet-1.1.2-android.apk](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-android.apk) |
 
 <sub>Another install option — always verify the SHA256 checksum below before installing.</sub>
 
@@ -55,12 +55,12 @@ Available on Desktop · Mobile · Browser Extension.
 
 | OS | Architecture | Direct Download |
 |---|---|---|
-| <img src="https://cdn.simpleicons.org/apple/000000" width="14" /> &nbsp; macOS | Apple Silicon | [UKey-Wallet-1.1.1-mac-arm64.dmg](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-mac-arm64.dmg)<br/>[UKey-Wallet-1.1.1-mac-arm64.zip](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-mac-arm64.zip) |
-| <img src="https://cdn.simpleicons.org/apple/000000" width="14" /> &nbsp; macOS | Intel | [UKey-Wallet-1.1.1-mac-x64.dmg](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-mac-x64.dmg)<br/>[UKey-Wallet-1.1.1-mac-x64.zip](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-mac-x64.zip) |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" width="14" /> &nbsp; Windows | x64 | [UKey-Wallet-1.1.1-win-x64.exe](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-win-x64.exe) |
-| <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" width="14" /> &nbsp; Windows | ARM64 | [UKey-Wallet-1.1.1-win-arm64.exe](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-win-arm64.exe) |
-| <img src="https://cdn.simpleicons.org/linux/000000" width="14" /> &nbsp; Linux | x64 | [UKey-Wallet-1.1.1-linux-x86_64.AppImage](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-linux-x86_64.AppImage) |
-| <img src="https://cdn.simpleicons.org/linux/000000" width="14" /> &nbsp; Linux | ARM64 | [UKey-Wallet-1.1.1-linux-arm64.AppImage](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.1/UKey-Wallet-1.1.1-linux-arm64.AppImage) |
+| <img src="https://cdn.simpleicons.org/apple/000000" width="14" /> &nbsp; macOS | Apple Silicon | [UKey-Wallet-1.1.2-mac-arm64.dmg](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-mac-arm64.dmg)<br/>[UKey-Wallet-1.1.2-mac-arm64.zip](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-mac-arm64.zip) |
+| <img src="https://cdn.simpleicons.org/apple/000000" width="14" /> &nbsp; macOS | Intel | [UKey-Wallet-1.1.2-mac-x64.dmg](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-mac-x64.dmg)<br/>[UKey-Wallet-1.1.2-mac-x64.zip](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-mac-x64.zip) |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" width="14" /> &nbsp; Windows | x64 | [UKey-Wallet-1.1.2-win-x64.exe](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-win-x64.exe) |
+| <img src="https://upload.wikimedia.org/wikipedia/commons/8/87/Windows_logo_-_2021.svg" width="14" /> &nbsp; Windows | ARM64 | [UKey-Wallet-1.1.2-win-arm64.exe](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-win-arm64.exe) |
+| <img src="https://cdn.simpleicons.org/linux/000000" width="14" /> &nbsp; Linux | x64 | [UKey-Wallet-1.1.2-linux-x86_64.AppImage](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-linux-x86_64.AppImage) |
+| <img src="https://cdn.simpleicons.org/linux/000000" width="14" /> &nbsp; Linux | ARM64 | [UKey-Wallet-1.1.2-linux-arm64.AppImage](https://github.com/bestyourwallet/UKey-Wallet/releases/download/v1.1.2/UKey-Wallet-1.1.2-linux-arm64.AppImage) |
 
 ### Browser Extension
 
@@ -81,13 +81,13 @@ Every release ships with a `SHA256SUMS.txt` file. **Always verify before install
 **macOS / Linux**
 
 ```bash
-shasum -a 256 UKey-Wallet-1.1.1-mac-arm64.dmg
+shasum -a 256 UKey-Wallet-1.1.2-mac-arm64.dmg
 ```
 
 **Windows (PowerShell)**
 
 ```powershell
-Get-FileHash UKey-Wallet-1.1.1-win-x64.exe -Algorithm SHA256
+Get-FileHash UKey-Wallet-1.1.2-win-x64.exe -Algorithm SHA256
 ```
 
 The output must match the value listed in `SHA256SUMS.txt` of the same release. If they do not match, do not install — the file may have been tampered with.
